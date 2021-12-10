@@ -1,10 +1,12 @@
+
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-decoration: none;
 }
 html{
@@ -42,10 +44,17 @@ section{
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 section .title{
     position: relative;
@@ -64,7 +73,9 @@ section .title::before{
     width: 180px;
     height: 3px;
     background: #111;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 section .title::after{
     position: absolute;
@@ -74,7 +85,9 @@ section .title::after{
     color: crimson;
     padding: 0 5px;
     background: #fff;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 /* navbar styling */
@@ -84,6 +97,8 @@ section .title::after{
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -91,9 +106,15 @@ section .title::after{
     background: crimson;
 }
 .navbar .max-width{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .navbar .logo a{
     color: #fff;
@@ -102,6 +123,8 @@ section .title::after{
 }
 .navbar .logo a span{
     color: crimson;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -117,6 +140,8 @@ section .title::after{
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -150,6 +175,8 @@ section .title::after{
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .scroll-up-btn.show{
@@ -158,12 +185,15 @@ section .title::after{
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
 }
 
   
 /* home section styling */
 .home{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: url("homeImage3.jpg") no-repeat center;
     height: 100vh;
@@ -202,6 +232,8 @@ section .title::after{
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid crimson;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
@@ -219,7 +251,8 @@ section .title::after{
 .about .about-content .left img{
     height: 400px;
     width: 400px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 6px;
 }
 .about .about-content .right{
@@ -246,6 +279,8 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -277,6 +312,8 @@ section .title::after{
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 /*.services .serv-content .card:hover{
@@ -284,14 +321,20 @@ section .title::after{
    
 }*/
 .services .serv-content .card .box{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -333,6 +376,8 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
@@ -343,10 +388,16 @@ section .title::after{
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .skills .skills-content .right span{
     font-weight: 500;
@@ -411,20 +462,35 @@ section .title::after{
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
     background: crimson;
 }
 .teams .carousel .card .box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover .box{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -434,9 +500,12 @@ section .title::after{
 .teams .carousel .card img{
     height: 150px;
     width: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -453,6 +522,8 @@ section .title::after{
     outline: none!important;
     border-radius: 50%;
     border: 2px solid crimson!important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -483,9 +554,13 @@ section .title::after{
     margin: 10px 0;
 }
 .contact .contact-content .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 65px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -501,6 +576,8 @@ section .title::after{
     color: #333;
 }
 .contact .right form .fields{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .contact .right form .field,
@@ -529,6 +606,8 @@ section .title::after{
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -554,6 +633,8 @@ section .title::after{
     font-weight: 500;
     border-radius: 6px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
@@ -646,6 +727,8 @@ footer span a:hover{
         background: #111;
         text-align: center;
         padding-top: 80px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
@@ -676,12 +759,18 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 0 auto 60px;
     }
     .about .about-content .right{
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
@@ -724,7 +813,10 @@ footer span a:hover{
         font-size: 19px;
     }
     .contact .right form .fields{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .contact .right form .name,
     .contact .right form .email{
